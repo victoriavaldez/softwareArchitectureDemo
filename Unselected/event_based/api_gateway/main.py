@@ -2,8 +2,8 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from typing import Dict, List
 
-from ..services.price_fetcher import publish_price_update
-from ..services.notifier import register_handlers, ALERT_LOG
+from services.price_fetcher import publish_price_update
+from services.notifier import register_handlers, ALERT_LOG
 
 app = FastAPI(title="Ticket Price Tracker - Event Based")
 
